@@ -1,0 +1,24 @@
+{
+    "name": "monkeycode/minisf",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andreas Hucks",
+            "email": "andreas@inputrequired.org"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/framework-bundle": "~2.6",
+        "symfony/twig-bundle": "~2.6",
+        "symfony/web-profiler-bundle": "~2.6",
+        "symfony/monolog-bundle": "~2.6",
+        "symfony/console": "~2.6",
+        "symfony/yaml": "~2.6",
+        "symfony/finder": "~2.6",
+        "vlucas/phpdotenv": "~1.0"
+    }
+}

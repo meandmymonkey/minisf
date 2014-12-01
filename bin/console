@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+set_time_limit(0);
+
+require_once __DIR__.'/../vendor/autoload.php';
+require_once __DIR__.'/../app/Kernel.php';
+
+use Symfony\Bundle\FrameworkBundle\Console\Application;
+use Symfony\Component\Console\Input\ArgvInput;
+
+$input = new ArgvInput();
+$kernel = new Kernel();
+$application = new Application($kernel);
+
+$application->run($input);
