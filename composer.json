@@ -1,5 +1,6 @@
 {
     "name": "monkeycode/minisf",
+    "type": "project",
     "license": "MIT",
     "authors": [
         {
