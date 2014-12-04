@@ -2,6 +2,7 @@
     "name": "monkeycode/minisf",
     "type": "project",
     "license": "MIT",
+    "description": "A minimal Symfony2 setup",
     "authors": [
         {
             "name": "Andreas Hucks",
@@ -13,13 +14,13 @@
     },
     "minimum-stability": "stable",
     "require": {
-        "symfony/framework-bundle": "~2.6",
-        "symfony/twig-bundle": "~2.6",
-        "symfony/web-profiler-bundle": "~2.6",
+        "php": ">=5.3.3",
+        "symfony/symfony": "~2.6",
         "symfony/monolog-bundle": "~2.6",
-        "symfony/console": "~2.6",
-        "symfony/yaml": "~2.6",
-        "symfony/finder": "~2.6",
+        "twig/extensions": "~1.0",
         "vlucas/phpdotenv": "~1.0"
+    },
+    "config": {
+        "bin-dir": "bin"
     }
 }
