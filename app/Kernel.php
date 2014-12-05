@@ -1,6 +1,7 @@
 <?php
 
 use Symfony\Component\Config\Loader\LoaderInterface;
+use Symfony\Component\Debug\Debug;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Kernel as SymfonyKernel;
 
@@ -15,7 +16,14 @@ class Kernel extends SymfonyKernel
             \Dotenv::load($this->getRootDir().'/..');
         }
         
-        parent::__construct(getenv($envVar), (bool)getenv($debugVar));
+        $env = getenv($envVar);
+        $debug = (bool)getenv($debugVar);
+        
+        if ($debug) {
+            Debug::enable();
+        }
+        
+        parent::__construct($env, $debug);
     }
     
     public function registerBundles()
