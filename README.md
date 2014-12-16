@@ -64,7 +64,7 @@ Symfony ME uses a Symfony 3.0 inspired directory structure:
 
 Create a project:
 
-    $ composer create-project -s beta monkeycode/minisf myproject
+    $ composer create-project monkeycode/minisf myproject
 
 Symfony ME does not come with the ```SensioDistributionBundle``` or other
 composer script handlers. Therefore you also need to run:
