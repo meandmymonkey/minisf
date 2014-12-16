@@ -73,3 +73,8 @@ composer script handlers. Therefore you also need to run:
     $ bin/console assets:install --symlink
 
 That's it, you're good to go.
+
+
+## Version Numbering
+
+To enable staying in sync with official Symfony2 version numbers, ME uses a fourth version number sequence [sic] to denote bugfixes for all ME releases that are based on the same Symfony2 release.
